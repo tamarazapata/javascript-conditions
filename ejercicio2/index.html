@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Input Example</title>
+    <link rel="stylesheet" href="./assets/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Selecciona tus stickers</h2>
+        <p>Nota: Puedes seleccionar un máximo de 10 stickers</p>
+        <div class="cards">
+            <div class="card">
+                <img src="./assets/img/brainstorm.png" alt="Brain with title" class="image">
+                <input id="input1" type="number" class="number-input" placeholder="Ingrese la cantidad">
+            </div>
+            <div class="card">
+                <img src="./assets/img/drawing-tablet.png" alt="Drawing tablet" class="image">
+                <input id="input2" type="number" class="number-input" placeholder="Ingrese la cantidad">
+            </div>
+            <div class="card">
+                <img src="./assets/img/think-different.png" alt="Think different" class="image">
+                <input id="input3"  type="number" class="number-input" placeholder="Ingrese la cantidad">
+            </div>
+        </div>
+        <div class="result-section">
+            <button id="stickersbtn">Calcular</button>
+            <p> <span class="result" id="result"></span> </p>
+        </div>  
+    </div>
+    <script src="./assets/javascript.js">  </script>
+</body>
+</html>
