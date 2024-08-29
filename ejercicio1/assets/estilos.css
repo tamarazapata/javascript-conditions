@@ -2,5 +2,7 @@
     cursor: pointer;
     width: 20%;
     cursor: pointer;
-    border: 5px solid ;
+    border: none;
+    border-color: transparent;
+
 }
