@@ -1,22 +1,16 @@
-const image = document.getElementById('clickeable-img');
+let image = document.getElementById("clickeable-img");
+let currentColor = image.style.borderColor || window.getComputedStyle(image).borderColor;
 
 function changeBorder() { 
-    let currentColor = image.style.borderColor
-    console.log(currentColor) 
-    if (currentColor = 'black') {
-        image.style.borderColor = 'red';
-        currentColor = 'red'
-        console.log(currentColor)
-    } else if (currentColor = 'red') {
-        image.style.borderColor = 'none';
-        currentColor = 'none'
-        console.log(currentColor)
-    } else {
-        image.style.borderColor = 'black';
-        currentColor = 'black'
-        console.log(currentColor)
+    if (currentColor === "" || currentColor === "black" || currentColor === "rgb(0, 0, 0)") {
+        image.style.borderColor = "red";
+        currentColor = "red"; 
+        console.log(image.style.borderColor);
+    } 
+    else if (currentColor === "red" || currentColor === "rgb(255, 0, 0)") {
+        image.style.borderColor = ""; 
+        currentColor = ""; 
+        console.log(image.style.borderColor);
     }
-    console.log(currentColor)
+    
 }
-
-image.addEventListener('click', changeBorder);
